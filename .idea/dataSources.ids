@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="IDK mySql" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="571114ff-3a48-48ba-a553-9d264eb067a6">
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>idk.si</jdbc-url>
+    <user-name>idksi98_jure</user-name>
+    <libraries>
+      <library>
+        <url>jar://E:/temp/mysqlconnector/mysql-connector-java-5.1.22-bin.jar!/</url>
+      </library>
+      <library>
+        <url>file://E:/temp/mysqlconnector/mysql-connector-license.txt</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>

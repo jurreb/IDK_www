@@ -1,0 +1,535 @@
+/* za računanje em-ov sem vzel 1em = 21px */
+
+@font-face {
+    font-family: Dosis-Light;
+    src: url("../fonts/Dosis/Dosis-Light.ttf");
+}
+
+@font-face {
+    font-family: Dosis-Medium;
+    src: url("../fonts/Dosis/Dosis-Medium.ttf");
+}
+
+@font-face {
+    font-family: Dosis-Bold;
+    src: url("../fonts/Dosis/Dosis-Bold.ttf");
+}
+
+@font-face {
+    font-family: PFMuse-Light;
+    src: url("../fonts/PFMuse/pfmuse-light.ttf");
+}
+
+@font-face {
+    font-family: PFMuse-Regular;
+    src: url("../fonts/PFMuse/pfmuse-regular.ttf");
+}
+
+@font-face {
+    font-family: PFMuse-Bold;
+    src: url("../fonts/PFMuse/pfmuse-bold.ttf");
+}
+
+@font-face {
+    font-family: PFMuse-BoldItalic;
+    src: url("../fonts/PFMuse/pfmuse-bolditalic.ttf");
+}
+
+
+body {
+    font-family: Dosis-Medium;
+    font-size: 21px; /* 16pt */
+    line-height: 26px; /* 19.2pt == 25.6px */
+}
+
+a:hover, a:focus {
+    color: #124354;
+}
+
+/* Basic style rule to outline and space block-level elements */
+[class*="span"] {
+    /*border: solid 1px green;*/
+}
+
+[class*="row"] {
+    /*border: solid 1px yellow;*/
+}
+
+header.row-fluid {
+    position: relative;
+    margin-left: 0;
+    background: #124354;
+    color: #CCCCCC;
+    font-size: 0.875em;
+    line-height: 1.05em;
+}
+
+header div.levo {
+    background-color: #00ADEF;
+    /*border-bottom: 1px solid red;*/
+    position: absolute;
+    height: 100%;
+    /*display: table-cell;*/
+    /*float: none;*/
+    margin-right: 10px;
+}
+
+/* s temle spodnjim preprečim da se cel header pobarva svetlo plavo (kot je header div.levo) */
+@media (max-width: 767px) {
+    .row-fluid [class*="levo"] {
+        width: 0%;
+    }
+}
+
+header p {
+    padding-top: 5px;
+}
+
+header div.sredina {
+    /*border: 2px red solid;*/
+    background: #124354;
+    padding-left: 13%;
+    /*display: table-cell;*/
+    /*float: none;*/
+    z-index: 1;
+}
+
+header div.desno img {
+    position: absolute;
+    bottom: 0em;
+    right: 8.4%;
+    /*max-width: 367px;*/
+    /*max-height: 111px;*/
+}
+
+header span.organizacija {
+    color: #00ADEF;
+}
+
+article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: justify;
+}
+
+article h1 {
+    font-size: 1.25em;
+    font-weight: normal;
+    /*padding-top: 0;*/
+    color: #333333;
+}
+
+article a {
+    font-size: 1.25em;
+    color: #00ADEF;
+    padding-top: 0;
+}
+
+article a.more {
+    font-family: Dosis-Light;
+    font-size: 1em;
+}
+
+article p {
+    font-size: 1em;
+    padding-top: 1em;
+    color: #124455;
+}
+
+article p.light {
+    font-family: Dosis-Light;
+}
+
+article img {
+    width: 100%;
+    max-width: 322px;
+    max-height: 214px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article ul {
+    margin: 0;
+}
+
+article ul li {
+    list-style-type: none;
+    color: #124455;
+}
+
+div#seznam_organizacij p {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+article.organizacije.podrobnosti {
+    margin-left: 0;
+}
+
+article.organizacije.podrobnosti ol {
+    margin-left: 0;
+}
+
+article.organizacije.podrobnosti li {
+    list-style-position: inside;
+    padding-bottom: 1em;
+}
+
+article.organizacije.podrobnosti li header {
+    margin-left: 1em;
+    display: inline-block;
+}
+
+article.organizacije.podrobnosti li section {
+    font-family: Dosis-Light;
+}
+
+article.organizacije.seznam {
+    float: right;
+}
+
+hr {
+    border: 1px solid #CCCCCC;
+    margin-top: 0;
+}
+
+ol.organizacije.seznam {
+
+}
+
+div.row.border-top {
+    border-top: 2px solid #CCCCCC;
+}
+
+div.sidepane {
+    text-align: right;
+    position: relative;
+}
+
+div.sidepane > div.print {
+    padding-top: 1.43em;
+    padding-bottom: 3.33em;
+    border-right: 2px solid #CCCCCC;
+}
+
+div.sidepane > aside h1 {
+    font-family: PFMuse-BoldItalic;
+    font-size: 1.25em;
+}
+
+div.sidepane > aside ul {
+    margin: 0;
+    overflow-y: auto;
+}
+
+div.sidepane > aside li {
+    font-size: 1em;
+    line-height: 1.5em;
+    list-style-type: none;
+}
+
+div.sidepane > aside li.subtitle a {
+    color: #666666;
+}
+
+div.row-fluid.logo {
+    margin-left: 0;
+    /*border: 2px solid red;*/
+}
+
+div.logo div.desno {
+    /*margin-left: 0px;*/
+    /*border: 2px solid red;*/
+    /*width: auto;*/
+    height: auto;
+}
+
+div.logo div.desno img {
+    /*width: 211px;*/
+    /*height: 70px;*/
+    /*width: 13.1875em;*/
+    /*height: 4.375em;*/
+    width: 9.23125em;
+    height: 3.0625em;
+    float: right;
+}
+
+nav ul.navi {
+    font-family: PFMuse-Regular;
+    font-size: 1.375em;
+}
+
+nav ul.navi li a {
+    color: #333333;
+}
+
+nav ul.navi li a:hover {
+    color: #00ADEF;
+}
+
+/* tole je moment ko klikneš na link */
+nav ul.navi li a:active {
+    font-family: PFMuse-BoldItalic;
+    /*color: red;*/
+}
+
+/* tole je class active, dolocen v html-ju*/
+nav ul.navi li.active a {
+    font-family: PFMuse-BoldItalic;
+    color: #124354;
+    /*color: red;*/
+}
+
+nav ul.navi li.kontakt_aktualno {
+    position: relative;
+    top: 0.8em;
+}
+
+nav ul.navi li a.aktualno {
+    background: #333333;
+    color: #ffffff;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.1em;
+    border-bottom-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+    position: relative;
+    top: 0.52em;
+    left: -0.5em;
+}
+
+nav ul.navi li a.aktualno:hover {
+    color: #00ADEF;
+}
+
+nav ul.navi {
+    border-bottom: solid 2px #333333;
+    padding-bottom: 0.3em;
+    margin-bottom: 1.5em;
+    margin-left: 0;
+}
+
+nav ul.navi li {
+    display: inline-block;
+    padding-right: 0.5em;
+    /*border: 1px solid red;*/
+}
+
+nav ul.navi li:first-child {
+    margin-left: 14.8936%;;
+}
+
+footer {
+    background: #124354;
+    color: #b3b3b3;
+    margin-left: 0;
+}
+
+footer [class*="span"] {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 2em;
+}
+
+footer div.fontresize a img {
+    padding: 0.5em;
+}
+
+.tooltip {
+    font-size: 1em;
+}
+
+footer div.selectlanguage p {
+    padding: 0.2em;
+}
+
+footer div.selectlanguage a.active {
+    font-family: PFMuse-Bold;
+    color: #f2f2f2;
+}
+
+footer div.selectlanguage a.nonactive {
+    font-family: PFMuse-Light;
+}
+
+
+/* storitve.html */
+ul.notranji li {
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 2em;  /* popravi css v primeru da je ena alineja dolga za dve vrsti */
+}
+
+div.sredina div.prazno {
+    height: 10em;
+}
+
+div.sredina div.storitve_stolpci div {
+    color: #124455;
+    width: 12%;
+    text-align: left;
+}
+
+div.sredina div.storitve_stolpci header {
+    font-family: Dosis-Bold;
+}
+
+div.sredina div#paketi_zgoraj {
+    padding-bottom: 2em;
+}
+
+div.sredina [id*="paket_"] p {
+    padding-top: 0;
+}
+
+div.sredina div#paketi_opomba {
+    font-family: Dosis-light;
+}
+
+div.sredina div#paketi_opomba p {
+    padding-top: 5em;
+}
+
+
+/* domov.html */
+h1.domov_naslov {
+    font-size: 2.28em;
+    line-height: 1.3em;
+    padding-bottom: 1em;
+    color: #124354;
+}
+
+h2.domov {
+    font-size: 1.14em;
+    line-height: 1.3em;
+    font-weight: normal;
+    color: #333333;
+    padding-top: 1em;
+}
+
+article span.domov_organizacija {
+    color: #1F6D8A;
+}
+
+ul.domov {
+    padding-bottom: 1em;
+}
+
+ul.domov_ul li {
+    color: #1F6D8A;
+}
+
+div.sidepane.domov img {
+    padding-top: 7em;
+}
+
+a.ul_toggle {
+    font-size: 1.25em;
+    line-height: 1.3em;
+    font-weight: normal;
+    color: #333333;
+    padding-top: 1em;
+}
+
+a.ul_toggle:hover {
+    color: #00ADEF;
+}
+
+
+/* povezave.html */
+article p.povezave_link {
+    padding: 0;
+}
+
+article p.povezave_link a {
+    font-family: Dosis-Light;
+    font-size: 1em;
+    color: #124455;
+}
+
+/* o_nas.html */
+p.odstavek_siv {
+    padding-top: 2em;
+    color: #333333;
+}
+
+a.link_manjsi {
+    font-size: 1em;
+}
+
+div.tanja {
+    text-align: right;
+}
+
+h1.o_nas_link_ime a {
+    color: #808080;
+    font-size: 1em;
+}
+
+p.o_nas {
+    color: #1F6D8A;
+}
+
+
+/* kontakt.html */
+article.kontakt {
+    padding-top: 2em;
+}
+
+article.kontakt ul li {
+    font-family: Dosis-Medium;
+    font-size: 1.25em;
+    line-height: 1.52em;
+    font-weight: normal;
+    color: #333333;
+    list-style: none;
+    margin: 0;
+}
+
+article.kontakt ul li:last-child {
+    line-height: 0.8em;
+    padding-bottom: 1.5em;
+}
+
+article.kontakt p {
+    font-family: Dosis-Medium;
+    color: #1F6D8A;
+}
+
+article.kontakt p a {
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 5em;
+    color: #1F6D8A;
+}
+
+article.kontakt p.manjsi_font {
+    font-size: 0.76em;
+}
+
+article.kontakt span.kontakt_nicla {
+    padding-left: 0.5em;
+    color: #CCCCCC;
+}
+
+article.kontakt textarea {
+    width: 100%;
+    height: 7em;
+    font-family: Dosis-Light;
+    font-size: 1em;
+    resize: none;
+}
+
+article.kontakt textarea#kontakt_email {
+    height: 2em;
+}
+
+article.kontakt button {
+    font-family: Dosis-Medium;
+    font-size: 0.76em;
+    float: right;
+}

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Dosis-Medium;
+    src: url("../fonts/Dosis/Dosis-Medium.ttf");
+}
+
+@font-face {
+    font-family: PFMuse-Regular;
+    src: url("../fonts/PFMuse/pfmuse-regular.ttf");
+}
+
+body {
+    font-family: Dosis-Medium;
+    line-height: 16.8px;
+}
+
+div {
+    border: 2px solid blue;
+}
+
+div div {
+    /*background: #1e90ff;*/
+    /*margin: 1px;*/
+    border: 1px solid red;
+}
+
+div.prva, div.druga, div.tretja {
+    background: gray;
+}
+
+div.prva div, div.druga div, div.tretja div {
+    display: table-cell;
+}
+
+div#ena {
+    background: #9acd32;
+    width: 15%;
+}
+
+div#dva {
+    border: 1px green solid;
+    width: 70%;
+    min-width: 250px;
+}
+
+div#tri {
+    width: 15%;
+}
+
+div#stiri {
+    width: 15%;
+}
+
+div#sest {
+    position: relative;
+}
+
+div#sest > div {
+    display: absolute;
+    display: list-item;
+    /*width: 15%;*/
+}
+
+div#sest .logo {
+    margin-top: auto;
+    /*bottom: 0;*/
+}
+
+div#sedem {
+    width: 15%;
+}
+
+div#osem {
+    width: 70%;
+}
+
+div#devet {
+    width: 15%;
+}
+
+.logo {
+    width: 211px;
+    height: 70px;
+}
