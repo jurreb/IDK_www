@@ -524,7 +524,8 @@ article.kontakt textarea {
     resize: none;
 }
 
-article.kontakt textarea#kontakt_email {
+article.kontakt form #kontakt_email div input {
+    width: 100%;
     height: 2em;
 }
 
@@ -532,4 +533,12 @@ article.kontakt button {
     font-family: Dosis-Medium;
     font-size: 0.76em;
     float: right;
+}
+
+span.formoutput.error p {
+    color: #b94a48;
+}
+
+span.formoutput.success {
+    color: #468847;
 }

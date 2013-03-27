@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6b152b5-481a-4675-8b58-c4a71fc6f5be" name="Default" comment="" />
+    <list default="true" id="c6b152b5-481a-4675-8b58-c4a71fc6f5be" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/kontakt_poslji_mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kontakt.html" afterPath="$PROJECT_DIR$/kontakt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/userIDK.css" afterPath="$PROJECT_DIR$/css/userIDK.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/userIDK.js" afterPath="$PROJECT_DIR$/js/userIDK.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="IDK_www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/vec_zensk.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1363565657398" ignored="false" />
-    <file path="/userIDK.css" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364075645574" ignored="false" />
+    <file path="/userIDK.css" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364409406262" ignored="false" />
     <file path="/projekti.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1363736173989" ignored="false" />
-    <file path="/userIDK.js" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364073865072" ignored="false" />
+    <file path="/userIDK.js" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364411526163" ignored="false" />
     <file path="/fontresize.js" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1363787656344" ignored="false" />
     <file path="/storitve.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1363736451028" ignored="false" />
     <file path="/o_nas.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364058081518" ignored="false" />
     <file path="/domov.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1363998838096" ignored="false" />
     <file path="/povezave.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364000598606" ignored="false" />
-    <file path="/kontakt.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364075595333" ignored="false" />
+    <file path="/kontakt.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364410260740" ignored="false" />
     <file path="/IDK mySql" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364166004764" ignored="false" />
+    <file path="/contact-form-handler.php" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364326889096" ignored="false" />
+    <file path="/contact-form-thank-you.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364246771567" ignored="false" />
+    <file path="/form.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364327386335" ignored="false" />
+    <file path="/Dummy.txt" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364389516498" ignored="false" />
+    <file path="/kontakt_poslji_mail.php" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364409542720" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,28 +48,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="o_nas.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/o_nas.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="67" selection-start="9240" selection-end="9240" vertical-scroll-proportion="-0.8333333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="povezave.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/povezave.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="67" selection-start="9609" selection-end="9609" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="kontakt.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kontakt.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0">
+            <state line="74" column="48" selection-start="2961" selection-end="2961" vertical-scroll-proportion="-12.166667">
               <folding />
             </state>
           </provider>
@@ -66,52 +60,61 @@
       <file leaf-file-name="domov.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domov.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="67" selection-start="4744" selection-end="4744" vertical-scroll-proportion="0.0">
+            <state line="99" column="67" selection-start="4744" selection-end="4744" vertical-scroll-proportion="-0.8333333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userIDK.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="userIDK.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/userIDK.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="531" column="30" selection-start="8553" selection-end="8553" vertical-scroll-proportion="0.721943">
+            <state line="528" column="13" selection-start="8515" selection-end="8515" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fontresize.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/fontresize/fontresize.js">
+      <file leaf-file-name="form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_trash/form/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="41" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+            <state line="25" column="45" selection-start="508" selection-end="508" vertical-scroll-proportion="-20.833334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="storitve.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storitve.html">
+      <file leaf-file-name="contact-form-handler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_trash/form/contact-form-handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="317" column="67" selection-start="16683" selection-end="16683" vertical-scroll-proportion="0.0">
+            <state line="28" column="29" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projekti.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projekti.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="337" column="63" selection-start="22033" selection-end="22033" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userIDK.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="userIDK.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/userIDK.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="36" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0">
+            <state line="149" column="0" selection-start="4563" selection-end="4563" vertical-scroll-proportion="-0.4516129">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1537" column="2" selection-start="24327" selection-end="24342" vertical-scroll-proportion="-7.64">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kontakt_poslji_mail.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/kontakt_poslji_mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="41" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,6 +127,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -135,10 +146,14 @@
         <option value="$PROJECT_DIR$/projekti.html" />
         <option value="$PROJECT_DIR$/o_nas.html" />
         <option value="$PROJECT_DIR$/domov.html" />
-        <option value="$PROJECT_DIR$/js/userIDK.js" />
-        <option value="$PROJECT_DIR$/kontakt.html" />
-        <option value="$PROJECT_DIR$/css/userIDK.css" />
         <option value="db-console:/e85c6f8e/571114ff-3a48-48ba-a553-9d264eb067a6/" />
+        <option value="$PROJECT_DIR$/form/contact-form-thank-you.html" />
+        <option value="$PROJECT_DIR$/form/contact-form-handler.php" />
+        <option value="$PROJECT_DIR$/form/form.html" />
+        <option value="$PROJECT_DIR$/css/userIDK.css" />
+        <option value="$PROJECT_DIR$/php/kontakt_poslji_mail.php" />
+        <option value="$PROJECT_DIR$/kontakt.html" />
+        <option value="$PROJECT_DIR$/js/userIDK.js" />
       </list>
     </option>
   </component>
@@ -148,7 +163,7 @@
     <option name="width" value="1296" />
     <option name="height" value="816" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -198,15 +213,19 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="E:/temp/mysqlconnector" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="www.idk.si" serverId="ddbe8094-b742-4de6-a4e1-f2fc2a1b441d">
     <servers>
@@ -226,6 +245,14 @@
     <option name="myDjangoConsoleState">
       <PyConsoleSettings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\dev\IDK\IDK_www\php" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\dev\IDK\IDK_www\_trash" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -262,6 +289,24 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c6b152b5-481a-4675-8b58-c4a71fc6f5be" name="Default" comment="" />
@@ -292,20 +337,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="816" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26555386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298217" sideWeight="0.6712329" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6712329" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.6707132" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6707132" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19692059" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20016207" sideWeight="0.6707132" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -371,62 +416,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/applications.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="21" selection-start="4717" selection-end="4717" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../font-resizer/font-resizer/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="21" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.3327869" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="23" selection-start="3271" selection-end="3271" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3146" column="0" selection-start="56393" selection-end="56405" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="624" column="0" selection-start="17515" selection-end="17515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/fontresize/fontresize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/povezave.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="67" selection-start="9609" selection-end="9609" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storitve.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="317" column="67" selection-start="16683" selection-end="16683" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projekti.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="63" selection-start="22033" selection-end="22033" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -438,37 +430,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domov.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="67" selection-start="4744" selection-end="4744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/userIDK.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="36" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kontakt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://db-console:/e85c6f8e/571114ff-3a48-48ba-a553-9d264eb067a6/">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="1" selection-start="10" selection-end="10" vertical-scroll-proportion="0.04302926">
+        <state line="1" column="1" selection-start="10" selection-end="10" vertical-scroll-proportion="0.04302926" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projekti.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="337" column="63" selection-start="22033" selection-end="22033" vertical-scroll-proportion="-0.8333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_trash/form/contact-form-thank-you.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="7" selection-start="100" selection-end="100" vertical-scroll-proportion="0.34364262">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domov.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="67" selection-start="4744" selection-end="4744" vertical-scroll-proportion="-0.8333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_trash/form/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="45" selection-start="508" selection-end="508" vertical-scroll-proportion="-20.833334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_trash/form/contact-form-handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="29" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1537" column="2" selection-start="24327" selection-end="24342" vertical-scroll-proportion="-7.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="22" selection-start="3137" selection-end="3137" vertical-scroll-proportion="0.33222038">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/userIDK.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="531" column="30" selection-start="8553" selection-end="8553" vertical-scroll-proportion="0.721943">
+        <state line="528" column="13" selection-start="8515" selection-end="8515" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/kontakt_poslji_mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="41" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="627" column="35" selection-start="17649" selection-end="17653" vertical-scroll-proportion="0.1669449">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="292" column="16" selection-start="6344" selection-end="6344" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kontakt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="48" selection-start="2961" selection-end="2961" vertical-scroll-proportion="-12.166667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/userIDK.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="0" selection-start="4563" selection-end="4563" vertical-scroll-proportion="-0.4516129">
           <folding />
         </state>
       </provider>

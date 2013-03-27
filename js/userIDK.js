@@ -124,4 +124,66 @@ $(document).ready(function() {
             }
         }
     });
+
+    // kontakt.html
+    // <form id=contactform>
+    var request;
+    $("#contactform").submit(function(event) {
+        $("span.formoutput").text("");
+
+        if (request) {
+            request.abort();
+        }
+        event.preventDefault();
+
+        var $form = $(this);
+        var $inputs = $form.find("input,select,button,textarea");
+        var serializedData = $form.serialize();
+
+        $inputs.prop("disabled", true);
+
+        var request = $.ajax({
+            url: "php/kontakt_poslji_mail.php",
+            type: "post",
+            data: serializedData
+        });
+
+        request.done(function (response, textStatus, jqXHR) {
+            // Zbrisi polja
+            $("#kontakt_sporocilo span.help-inline").text("");
+            $("#kontakt_email span.help-inline").text("");
+            // Zbrisi barve
+            $("#kontakt_sporocilo").removeClass("error");
+            $("#kontakt_email").removeClass("error");
+            if (response == "\r\n") {
+                // Uspesno poslano
+                $("span.formoutput").addClass("success");
+                $("span.formoutput").text("Hvala za sporočilo!");
+
+                $("#kontakt_sporocilo textarea").val("");
+                $("#kontakt_email input").val("");
+            }
+            else {
+                // Prislo je do napake v php skripti
+                // response je string vseh error-jev, vsak v svoji vrstici
+                response = response.replace('\r\n', ''); // na zacetku string je \r\n
+                var errors = response.split('\n');  // ce je vec napak, jih razbij v vrstice
+                var buff = '';
+                $.each(errors, function(index, error) {
+                    if (error != '') {
+                        buff = error.split('|'); // primer vrstice: "kontakt_sporocilo|Neveljaven e-naslov."
+                        $("#" + buff[0] + " span.help-inline").text(buff[1]);
+                        $("#" + buff[0]).addClass("error");
+                    }
+                });
+            }
+        });
+        request.fail(function (jqXHR, textStatus, errorThrown) {
+            // Prislo je do napake pri klicu php skripte
+            $("span.formoutput").text(errorThrown);
+        });
+        request.always(function() {
+            $inputs.prop("disabled", false);
+        });
+    });
 });
