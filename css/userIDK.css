@@ -55,6 +55,11 @@ a:hover, a:focus {
     /*border: solid 1px yellow;*/
 }
 
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 header.row-fluid {
     position: relative;
     margin-left: 0;
