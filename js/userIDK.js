@@ -2,6 +2,14 @@ $(document).ready(function() {
     var path = window.location.pathname;
     var filename = path.match(/.*\/([^/]+)\.([^?]+)/i)[1];  //Use this in the case that you don't want your query string to be part of your filename (which you probably don't).
 
+    if (filename == "domov") {
+        $(".container").css('padding-top', '0');
+    }
+    else {
+        $(".container").css('padding-top', '77px');
+    }
+
+
     // inicializiraj posamezne strani
     if (filename == "o_nas") {
         img = $("header img");
@@ -102,6 +110,7 @@ $(document).ready(function() {
                     height: '4.19em',
                     bottom: '0em'
                 });
+                return false;
             }
             else if (targetid.indexOf("#vec_zensk") != -1 || targetid.indexOf("#seznam_organizacij") != -1) { // projekti.html
                 img.attr("src", "imgs/muca in pticki.png");
@@ -110,6 +119,7 @@ $(document).ready(function() {
                     height: '5.28em',
                     bottom: '-0.7em'
                 });
+                return false;
             }
             else if (targetid.indexOf("#paket_") != -1) { // storitve.html
                 img.attr("src", "imgs/paketi mravlice.png");
@@ -121,6 +131,7 @@ $(document).ready(function() {
                 });
                 $("div.sredina div#paketi_zgoraj").show();
                 $("div.sredina div#paketi_opomba").show();
+                return false;
             }
         }
     });
@@ -158,7 +169,7 @@ $(document).ready(function() {
             if (response == "\r\n") {
                 // Uspesno poslano
                 $("span.formoutput").addClass("success");
-                $("span.formoutput").text("Hvala za sporočilo!");
+                $("span.formoutput").text("Hvala za sporočilo. Odgovorili vam bomo takoj, ko bomo lahko.");
 
                 $("#kontakt_sporocilo textarea").val("");
                 $("#kontakt_email input").val("");

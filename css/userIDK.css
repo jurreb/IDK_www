@@ -35,11 +35,19 @@
     src: url("../fonts/PFMuse/pfmuse-bolditalic.ttf");
 }
 
+html {
+    height: 100%;
+}
 
 body {
     font-family: Dosis-Medium;
     font-size: 21px; /* 16pt */
     line-height: 26px; /* 19.2pt == 25.6px */
+    height: 100%;
+}
+
+article a.header {
+    font-size: 1em;
 }
 
 a:hover, a:focus {
@@ -55,18 +63,50 @@ a:hover, a:focus {
     /*border: solid 1px yellow;*/
 }
 
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+.container {
+    position: relative;
+    height: 100%;
+    padding-top: 77px; /*7.2em = 136px; */
+    padding-bottom: 173px; /* 8.1em = 170px; */
+    margin: 0;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
 }
 
-header.row-fluid {
+.content-scrollable {
+    /*overflow: auto;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+#header {
+    /* nastavil div id=header --> class="navbar-fixed-top" */
+}
+
+#footer {
+    /* nastavil div id=footer --> class="navbar-fixed-bottom" */
+    /*position: fixed;*/
+    /*bottom: 0;*/
+}
+
+header.row {
     position: relative;
-    margin-left: 0;
+    /*margin-left: 0;*/
     background: #124354;
     color: #CCCCCC;
-    font-size: 0.875em;
-    line-height: 1.05em;
+    font-size: 18px; /* 0.875em; */
+    line-height: 20px; /* 1.05em; */
+    height: 77px;
 }
 
 header div.levo {
@@ -76,12 +116,12 @@ header div.levo {
     height: 100%;
     /*display: table-cell;*/
     /*float: none;*/
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 
 /* s temle spodnjim preprečim da se cel header pobarva svetlo plavo (kot je header div.levo) */
 @media (max-width: 767px) {
-    .row-fluid [class*="levo"] {
+    .row [class*="levo"] {
         width: 0%;
     }
 }
@@ -92,11 +132,10 @@ header p {
 
 header div.sredina {
     /*border: 2px red solid;*/
-    background: #124354;
-    padding-left: 13%;
+    padding-left: 14%;
     /*display: table-cell;*/
     /*float: none;*/
-    z-index: 1;
+    /*z-index: 1;*/
 }
 
 header div.desno img {
@@ -118,6 +157,10 @@ article {
     text-align: justify;
 }
 
+article [class*="span"] {
+    margin: 0;
+}
+
 article h1 {
     font-size: 1.25em;
     font-weight: normal;
@@ -133,6 +176,11 @@ article a {
 
 article a.more {
     font-family: Dosis-Light;
+    font-size: 1em;
+}
+
+article a.link_tekst {
+    font-family: Dosis-Medium;
     font-size: 1em;
 }
 
@@ -164,6 +212,7 @@ article ul {
 article ul li {
     list-style-type: none;
     color: #124455;
+    line-height: 1.23em;
 }
 
 div#seznam_organizacij p {
@@ -241,31 +290,60 @@ div.sidepane > aside li.subtitle a {
     color: #666666;
 }
 
-div.row-fluid.logo {
-    margin-left: 0;
-    /*border: 2px solid red;*/
+nav#primary-navigation {
+    text-align: center;
 }
 
-div.logo div.desno {
-    /*margin-left: 0px;*/
-    /*border: 2px solid red;*/
-    /*width: auto;*/
-    height: auto;
+hr.navi {
+    margin: 10 0 0 0;
+    border: solid 2px #333333;
+    width: 912px;
 }
 
-div.logo div.desno img {
-    /*width: 211px;*/
-    /*height: 70px;*/
-    /*width: 13.1875em;*/
-    /*height: 4.375em;*/
-    width: 9.23125em;
-    height: 3.0625em;
-    float: right;
+
+nav ul.navi.tretjavrsta {
+    padding-bottom: 10;
 }
 
 nav ul.navi {
     font-family: PFMuse-Regular;
-    font-size: 1.375em;
+    font-size: 28px; /* 1.375em; */
+    /*border: 1px solid blue;*/
+    /*border-bottom: solid 2px #333333;*/
+    /*padding-bottom: 0.3em;*/
+    /*margin-bottom: 1.3em;*/
+    display: inline-table;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul.navi li {
+    display: inline-table;
+    padding-right: 0.5em;
+    /*border: 1px solid red;*/
+    width: 100px;
+}
+
+nav ul.navi li.logo {
+    width: 211px;
+}
+
+nav ul.navi li:first-child {
+    /*margin-left: 14.8936%;*/
+}
+
+nav ul.navi li img {
+    width: 211px;
+    height: 70px;
+    /*width: 13.1875em;*/
+    /*height: 4.375em;*/
+    /*width: 9.23125em;*/
+    /*height: 3.0625em;*/
+    /*float: right;*/
+    /*position: relative;*/
+    /*top:  -1.6em;*/
+    /*left: -6em;*/
 }
 
 nav ul.navi li a {
@@ -274,6 +352,7 @@ nav ul.navi li a {
 
 nav ul.navi li a:hover {
     color: #00ADEF;
+    font-family: PFMuse-Bold;
 }
 
 /* tole je moment ko klikneš na link */
@@ -290,8 +369,8 @@ nav ul.navi li.active a {
 }
 
 nav ul.navi li.kontakt_aktualno {
-    position: relative;
-    top: 0.8em;
+    /*position: relative;*/
+    /*top: 20px; *//* 0.7em; */
 }
 
 nav ul.navi li a.aktualno {
@@ -302,30 +381,13 @@ nav ul.navi li a.aktualno {
     padding-bottom: 0.1em;
     border-bottom-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
-    position: relative;
-    top: 0.52em;
-    left: -0.5em;
+    /*position: relative;*/
+    /*top:  1.4em;*/
+    /*left: -5em;*/
 }
 
 nav ul.navi li a.aktualno:hover {
     color: #00ADEF;
-}
-
-nav ul.navi {
-    border-bottom: solid 2px #333333;
-    padding-bottom: 0.3em;
-    margin-bottom: 1.5em;
-    margin-left: 0;
-}
-
-nav ul.navi li {
-    display: inline-block;
-    padding-right: 0.5em;
-    /*border: 1px solid red;*/
-}
-
-nav ul.navi li:first-child {
-    margin-left: 14.8936%;;
 }
 
 footer {
@@ -335,9 +397,10 @@ footer {
 }
 
 footer [class*="span"] {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    height: 2em;
+    /*margin-top: 0.5em;*/
+    /*margin-bottom: 0.5em;*/
+    height: 33px; /* 1.6em; */
+    font-size: 21px;
 }
 
 footer div.fontresize a img {
@@ -349,7 +412,7 @@ footer div.fontresize a img {
 }
 
 footer div.selectlanguage p {
-    padding: 0.2em;
+    padding: 0.1em;
 }
 
 footer div.selectlanguage a.active {
@@ -361,6 +424,14 @@ footer div.selectlanguage a.nonactive {
     font-family: PFMuse-Light;
 }
 
+/* projekti.html */
+h1.vec_zensk {
+    line-height: 1.1em;
+}
+
+a.link_luden {
+    font-size: 1em;
+}
 
 /* storitve.html */
 ul.notranji li {
@@ -370,7 +441,7 @@ ul.notranji li {
 }
 
 div.sredina div.prazno {
-    height: 10em;
+    height: 3em;
 }
 
 div.sredina div.storitve_stolpci div {
@@ -381,6 +452,14 @@ div.sredina div.storitve_stolpci div {
 
 div.sredina div.storitve_stolpci header {
     font-family: Dosis-Bold;
+}
+
+div.sredina div.storitve_stolpci a.storitve {
+    color: #124455;
+}
+
+div.sredina div.storitve_stolpci a.storitve:hover {
+    color: #00ADEF;
 }
 
 div.sredina div#paketi_zgoraj {
