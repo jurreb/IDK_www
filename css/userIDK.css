@@ -329,8 +329,10 @@ nav#primary-navigation {
 
 hr.navi {
     margin: 10px 0 0 0;
-    border: solid 2px #333333;
+    border-top: solid 2px #333333;
+    height: 0px;
     width: 70%; /* 890px; */
+    float: left; /* zaradi IE */
 }
 
 
@@ -399,11 +401,6 @@ nav ul.navi li.active a {
     font-family: PFMuse-BoldItalic;
     color: #124354;
     /*color: red;*/
-}
-
-nav ul.navi li.kontakt_aktualno {
-    /*position: relative;*/
-    /*top: 20px; *//* 0.7em; */
 }
 
 nav ul.navi li a.aktualno {

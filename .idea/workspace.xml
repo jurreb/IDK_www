@@ -3,26 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c6b152b5-481a-4675-8b58-c4a71fc6f5be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domov.html" afterPath="$PROJECT_DIR$/domov.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/fontresize/fontresize.js" afterPath="$PROJECT_DIR$/js/fontresize/fontresize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kontakt.html" afterPath="$PROJECT_DIR$/kontakt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/o_nas.html" afterPath="$PROJECT_DIR$/o_nas.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/povezave.html" afterPath="$PROJECT_DIR$/povezave.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projekti.html" afterPath="$PROJECT_DIR$/projekti.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storitve.html" afterPath="$PROJECT_DIR$/storitve.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/userIDK.css" afterPath="$PROJECT_DIR$/css/userIDK.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/userIDK.js" afterPath="$PROJECT_DIR$/js/userIDK.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IDK_www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/vec_zensk.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1363565657398" ignored="false" />
-    <file path="/userIDK.css" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365518516149" ignored="false" />
+    <file path="/userIDK.css" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365520740823" ignored="false" />
     <file path="/projekti.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365516738456" ignored="false" />
     <file path="/userIDK.js" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365519778011" ignored="false" />
     <file path="/fontresize.js" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365110585790" ignored="false" />
     <file path="/storitve.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365519855962" ignored="false" />
     <file path="/o_nas.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365174999790" ignored="false" />
-    <file path="/domov.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365108055733" ignored="false" />
+    <file path="/domov.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365521082429" ignored="false" />
     <file path="/povezave.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365178798358" ignored="false" />
     <file path="/kontakt.html" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1365177871061" ignored="false" />
     <file path="/IDK mySql" changelist="c6b152b5-481a-4675-8b58-c4a71fc6f5be" time="1364166004764" ignored="false" />
@@ -76,7 +69,7 @@
       <file leaf-file-name="domov.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domov.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="30" selection-start="2931" selection-end="2931" vertical-scroll-proportion="-14.903226">
+            <state line="58" column="47" selection-start="3365" selection-end="3365" vertical-scroll-proportion="-13.4838705">
               <folding />
             </state>
           </provider>
@@ -94,7 +87,7 @@
       <file leaf-file-name="storitve.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storitve.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="18" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-4.2580647">
+            <state line="370" column="14" selection-start="19560" selection-end="19560" vertical-scroll-proportion="-6.129032">
               <folding />
             </state>
           </provider>
@@ -103,7 +96,7 @@
       <file leaf-file-name="userIDK.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/userIDK.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="443" column="1" selection-start="7746" selection-end="7746" vertical-scroll-proportion="0.0">
+            <state line="332" column="16" selection-start="5752" selection-end="5752" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,7 +123,7 @@
       <file leaf-file-name="projekti.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projekti.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="358" column="77" selection-start="25616" selection-end="25616" vertical-scroll-proportion="0.92504257">
+            <state line="40" column="49" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.48">
               <folding />
             </state>
           </provider>
@@ -171,14 +164,14 @@
         <option value="$PROJECT_DIR$/kontakt.scroll.html" />
         <option value="$PROJECT_DIR$/css/userIDK.scroll.css" />
         <option value="$PROJECT_DIR$/o_nas.html" />
-        <option value="$PROJECT_DIR$/domov.html" />
         <option value="$PROJECT_DIR$/kontakt.html" />
         <option value="$PROJECT_DIR$/povezave.html" />
         <option value="$PROJECT_DIR$/js/fontresize/fontresize.js" />
-        <option value="$PROJECT_DIR$/css/userIDK.css" />
         <option value="$PROJECT_DIR$/js/userIDK.js" />
-        <option value="$PROJECT_DIR$/storitve.html" />
         <option value="$PROJECT_DIR$/projekti.html" />
+        <option value="$PROJECT_DIR$/domov.html" />
+        <option value="$PROJECT_DIR$/css/userIDK.css" />
+        <option value="$PROJECT_DIR$/storitve.html" />
       </list>
     </option>
   </component>
@@ -260,26 +253,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IDK_www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IDK_www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFMuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IDK_www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IDK_www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="132" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="114" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="114" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="133" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="132" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../IDK_www_fixed" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="133" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="807" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="807" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="133" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="115" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="848" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="797" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="132" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="131" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="130" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -413,25 +438,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="816" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26179606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262195" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6712329" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.6707132" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36183205" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6707132" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13614263" sideWeight="0.73820394" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14910859" sideWeight="0.67328244" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32671756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32674772" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3628049" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -552,23 +577,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domov.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="30" selection-start="2931" selection-end="2931" vertical-scroll-proportion="-14.903226">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/kontakt_poslji_mail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="45" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/userIDK.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="443" column="1" selection-start="7746" selection-end="7746" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -580,16 +591,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/domov.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="47" selection-start="3365" selection-end="3365" vertical-scroll-proportion="-13.4838705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/userIDK.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="332" column="16" selection-start="5752" selection-end="5752" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/storitve.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-4.2580647">
+        <state line="370" column="14" selection-start="19560" selection-end="19560" vertical-scroll-proportion="-6.129032">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projekti.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="358" column="77" selection-start="25616" selection-end="25616" vertical-scroll-proportion="0.92504257">
+        <state line="40" column="49" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.48">
           <folding />
         </state>
       </provider>
