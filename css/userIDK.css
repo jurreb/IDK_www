@@ -41,8 +41,9 @@ html {
 
 body {
     font-family: Dosis-Medium;
-    font-size: 21px; /* 16pt */
-    line-height: 26px; /* 19.2pt == 25.6px */
+    /* font-size se mora ujemati z var DEFAULT = 21; v fontresizer.js */
+    font-size: 16px; /* 21px ==  16pt */
+    line-height: 20px; /* 26px == 19.2pt == 25.6px */
     height: 100%;
 }
 
@@ -59,6 +60,10 @@ a:hover, a:focus {
     /*border: solid 1px green;*/
 }
 
+.span2.levo {
+    width: 13%;
+}
+
 [class*="row"] {
     /*border: solid 1px yellow;*/
 }
@@ -66,7 +71,10 @@ a:hover, a:focus {
 .container {
     position: relative;
     height: 100%;
-    padding-top: 77px; /*7.2em = 136px; */
+    width: 100%;
+    /* !!!PAZI!!! padding-top se nastavlja tudi v userIDK.js */
+    padding-top: 85px; /*7.2em = 136px; */  /* mora bit enak header.row height */
+    /* !!!PAZI!!! padding-bottom se nastavlja tudi v userIDK.js */
     padding-bottom: 173px; /* 8.1em = 170px; */
     margin: 0;
     -moz-box-sizing:border-box;
@@ -104,9 +112,14 @@ header.row {
     /*margin-left: 0;*/
     background: #124354;
     color: #CCCCCC;
-    font-size: 18px; /* 0.875em; */
-    line-height: 20px; /* 1.05em; */
-    height: 77px;
+    font-size: 15px; /* 0.875em; */
+    line-height: 18px; /* 1.05em; */
+    height: 85px;
+}
+
+
+header .span2.levo {
+    width: 12.7%;
 }
 
 header div.levo {
@@ -132,7 +145,7 @@ header p {
 
 header div.sredina {
     /*border: 2px red solid;*/
-    padding-left: 14%;
+    padding-left: 13.5%;
     /*display: table-cell;*/
     /*float: none;*/
     /*z-index: 1;*/
@@ -168,6 +181,10 @@ article h1 {
     color: #333333;
 }
 
+a.link_h1 {
+    font-size: 1em;
+}
+
 article a {
     font-size: 1.25em;
     color: #00ADEF;
@@ -196,23 +213,39 @@ article p.light {
 
 article img {
     width: 100%;
-    max-width: 322px;
-    max-height: 214px;
     margin-top: 1em;
     margin-bottom: 1em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+article ol {
+    text-align: left;
+    margin: 0 0 10 17;
+}
+
+article ol li {
+    color: #124455;
+    line-height: 1.23em;
 }
 
 article ul {
-    margin: 0;
+    text-align: left;
+    margin: 0 0 10 10;
 }
 
 article ul li {
     list-style-type: none;
+    text-indent: -0.4em;
     color: #124455;
     line-height: 1.23em;
+}
+
+article ul li:before {
+    content: "-";
+    position: relative;
+    left: -5px;
 }
 
 div#seznam_organizacij p {
@@ -295,19 +328,19 @@ nav#primary-navigation {
 }
 
 hr.navi {
-    margin: 10 0 0 0;
+    margin: 10px 0 0 0;
     border: solid 2px #333333;
-    width: 912px;
+    width: 70%; /* 890px; */
 }
 
 
 nav ul.navi.tretjavrsta {
-    padding-bottom: 10;
+    padding-bottom: 10px;
 }
 
 nav ul.navi {
     font-family: PFMuse-Regular;
-    font-size: 28px; /* 1.375em; */
+    font-size: 25px; /* 1.375em; */
     /*border: 1px solid blue;*/
     /*border-bottom: solid 2px #333333;*/
     /*padding-bottom: 0.3em;*/
@@ -320,7 +353,7 @@ nav ul.navi {
 
 nav ul.navi li {
     display: inline-table;
-    padding-right: 0.5em;
+    padding-right: 10px;
     /*border: 1px solid red;*/
     width: 100px;
 }
@@ -376,11 +409,11 @@ nav ul.navi li.kontakt_aktualno {
 nav ul.navi li a.aktualno {
     background: #333333;
     color: #ffffff;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0.1em;
-    border-bottom-left-radius: 0.2em;
-    border-bottom-right-radius: 0.2em;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     /*position: relative;*/
     /*top:  1.4em;*/
     /*left: -5em;*/
@@ -397,14 +430,15 @@ footer {
 }
 
 footer [class*="span"] {
+    /*border: 1px solid red;*/
     /*margin-top: 0.5em;*/
     /*margin-bottom: 0.5em;*/
-    height: 33px; /* 1.6em; */
-    font-size: 21px;
+    height: 28px; /* 1.6em; */
+    font-size: 16px;
 }
 
 footer div.fontresize a img {
-    padding: 0.5em;
+    padding: 7px;
 }
 
 .tooltip {
@@ -412,7 +446,7 @@ footer div.fontresize a img {
 }
 
 footer div.selectlanguage p {
-    padding: 0.1em;
+    padding: 2px;
 }
 
 footer div.selectlanguage a.active {
@@ -425,7 +459,7 @@ footer div.selectlanguage a.nonactive {
 }
 
 /* projekti.html */
-h1.vec_zensk {
+h1.naslov_clanka {
     line-height: 1.1em;
 }
 
@@ -433,15 +467,45 @@ a.link_luden {
     font-size: 1em;
 }
 
+#slideshow {
+    position:relative;
+    height: 17em; /* 240px; */
+    width: 100%;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:1em;
+    left:0;
+    z-index:8;
+    height: 90%;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
 /* storitve.html */
+div.sidepane_fixed {
+    position: fixed;
+    left: 70%;
+}
+
 ul.notranji li {
     list-style: disc;
     list-style-position: inside;
-    padding-left: 2em;  /* popravi css v primeru da je ena alineja dolga za dve vrsti */
+    padding-left: 2em;      /* zamakne celoten ul bolj desno, ker je notranji */
+    text-indent: -0.9em;    /* popravi css v primeru da je ena alineja dolga za dve vrsti  */
 }
 
-div.sredina div.prazno {
-    height: 3em;
+ul.notranji li:before {
+    content: "";
+    /*position: relative;*/
+    /*left: -5px;*/
 }
 
 div.sredina div.storitve_stolpci div {
@@ -463,27 +527,34 @@ div.sredina div.storitve_stolpci a.storitve:hover {
 }
 
 div.sredina div#paketi_zgoraj {
-    padding-bottom: 2em;
+    /*padding-bottom: 2em;*/
 }
 
 div.sredina [id*="paket_"] p {
     padding-top: 0;
 }
 
-div.sredina div#paketi_opomba {
+div#paketi_opomba {
     font-family: Dosis-light;
+    font-size: 0.8em;
+    line-height: 1em;
 }
 
-div.sredina div#paketi_opomba p {
-    padding-top: 5em;
+div#paketi_opomba p {
+    padding-top: 1em;
+    /*padding-left: 0.5em;*/
+}
+
+article.span10.storitve {
+    padding-bottom: 0;
 }
 
 
 /* domov.html */
 h1.domov_naslov {
     font-size: 2.28em;
-    line-height: 1.3em;
-    padding-bottom: 1em;
+    line-height: 1.2em;
+    padding-bottom: 1.5em;
     color: #124354;
 }
 
@@ -492,7 +563,7 @@ h2.domov {
     line-height: 1.3em;
     font-weight: normal;
     color: #333333;
-    padding-top: 1em;
+    /*padding-top: 1em;*/
 }
 
 article span.domov_organizacija {
@@ -511,7 +582,12 @@ div.sidepane.domov img {
     padding-top: 7em;
 }
 
-a.ul_toggle {
+span.slidelink:hover {
+    color: #00ADEF;
+    cursor: pointer;
+}
+
+span.slideup {
     font-size: 1.25em;
     line-height: 1.3em;
     font-weight: normal;
@@ -519,12 +595,18 @@ a.ul_toggle {
     padding-top: 1em;
 }
 
-a.ul_toggle:hover {
-    color: #00ADEF;
+span.slidedown {
+    font-size: 0.9em;
+    color: #666666;
+    padding-left: 0.2em;
 }
 
 
 /* povezave.html */
+article span.povezave_naslov_linka {
+    display: block;
+}
+
 article p.povezave_link {
     padding: 0;
 }
@@ -545,26 +627,52 @@ a.link_manjsi {
     font-size: 1em;
 }
 
+div.klara img {
+    width: 65%;
+    float: left;
+}
+
+div.klara h1 {
+    clear: both;
+}
+
 div.tanja {
     text-align: right;
+}
+
+div.tanja img {
+    width: 65%;
+    float: right;
+}
+
+div.tanja h1 {
+    clear: both;
 }
 
 h1.o_nas_link_ime a {
     color: #808080;
     font-size: 1em;
+    line-height: 1em;
+}
+h1.o_nas_link_ime {
+    margin-top: 0;
 }
 
 p.o_nas {
     color: #1F6D8A;
 }
 
+div.sredina div.prazno {
+    height: 1em;
+}
+
 
 /* kontakt.html */
 article.kontakt {
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
-article.kontakt ul li {
+article.kontakt span.kontakt_span_naslov {
     font-family: Dosis-Medium;
     font-size: 1.25em;
     line-height: 1.52em;
@@ -572,11 +680,12 @@ article.kontakt ul li {
     color: #333333;
     list-style: none;
     margin: 0;
+    display: block;
 }
 
-article.kontakt ul li:last-child {
+article.kontakt span#kontakt_span_3 {
     line-height: 0.8em;
-    padding-bottom: 1.5em;
+    padding-bottom: 0.5em;
 }
 
 article.kontakt p {
@@ -584,10 +693,14 @@ article.kontakt p {
     color: #1F6D8A;
 }
 
+article.kontakt p.no_padding_top {
+    padding-top: 0;
+}
+
 article.kontakt p a {
     font-size: 1em;
-    padding-top: 1em;
-    padding-bottom: 5em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
     color: #1F6D8A;
 }
 
@@ -602,7 +715,7 @@ article.kontakt span.kontakt_nicla {
 
 article.kontakt textarea {
     width: 100%;
-    height: 7em;
+    height: 5em;
     font-family: Dosis-Light;
     font-size: 1em;
     resize: none;

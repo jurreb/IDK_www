@@ -2,15 +2,30 @@ $(document).ready(function() {
     var path = window.location.pathname;
     var filename = path.match(/.*\/([^/]+)\.([^?]+)/i)[1];  //Use this in the case that you don't want your query string to be part of your filename (which you probably don't).
 
+    //////////////////////////////////////////
+    //  prilagajanje scrollable containerja //
+    //////////////////////////////////////////
     if (filename == "domov") {
-        $(".container").css('padding-top', '0');
+        $(".container").css('padding-top', '0px');
+        $(".container").css('padding-bottom', '173px');
+    }
+    else if (filename == "storitve") {
+        $(".container").css('padding-top', '85px');
+        $(".container").css('padding-bottom', '173px');
+    }
+    else if (filename == "kontakt") {
+        $(".container").css('padding-top', '85px');
+        $(".container").css('padding-bottom', '103px');
     }
     else {
-        $(".container").css('padding-top', '77px');
+        // tole so default vrednosti
+        $(".container").css('padding-top', '85px');
+        $(".container").css('padding-bottom', '173px');
     }
 
-
-    // inicializiraj posamezne strani
+    ////////////////////////////////////
+    // inicializiraj posamezne strani //
+    ////////////////////////////////////
     if (filename == "o_nas") {
         img = $("header img");
         img.css({
@@ -45,6 +60,9 @@ $(document).ready(function() {
         });
         // skrij print img
         $("div.print img").css('visibility', 'hidden');
+        // skrij sidepane
+        $("div.sidepane aside").css('visibility', 'hidden');
+
     }
     else if (filename == "povezave") {
         img = $("header img");
@@ -55,6 +73,8 @@ $(document).ready(function() {
         });
         // skrij print img
         $("div.print img").css('visibility', 'hidden');
+        // skrij sidepane
+        $("div.sidepane aside").css('visibility', 'hidden');
     }
     else if (filename == "kontakt") {
         img = $("header img");
@@ -67,8 +87,9 @@ $(document).ready(function() {
         $("div.print img").css('visibility', 'hidden');
     }
 
-
-    // inicializiraj div-e z vsebino
+    ///////////////////////////////////
+    // inicializiraj div-e z vsebino //
+    ///////////////////////////////////
     $("div.content").hide();
     if (filename == "o_nas") {
         $("div#o_nas").show()
@@ -84,13 +105,17 @@ $(document).ready(function() {
         $("div#povezave").show();
     }
 
-
-    // inicializiraj tooltip
+    ///////////////////////////
+    // inicializiraj tooltip //
+    ///////////////////////////
     $("div.fontresize a").tooltip();
     $("div.selectlanguage a").tooltip();
+    $(".opomba_tooltip").tooltip();
 
-    // click handler za linke na desni strani
-    $("ul li.title a, ul li.subtitle a, h1.o_nas_link_ime a").click(function() {
+    ////////////////////////////////////////////
+    // click handler za linke na desni strani //
+    ////////////////////////////////////////////
+    $("ul li.title a, ul li.subtitle a, h1.o_nas_link_ime a, a.link_tekst_js").click(function() {
         // zamenjaj prikazani div
         $("div.content").hide();
         targetid = $(this).attr('href');
@@ -100,19 +125,13 @@ $(document).ready(function() {
         img = $("header img");
         if (targetid=="#zahodna_sahara") { // projekti.html
             img.hide();
+            // startaj slideshow
+            //$(".slideshow").cycle();
+            setInterval( "slideSwitch()", 5000 );
         }
         else {
             img.show();
-            if (targetid=="#uvod") { // projekti.html
-                img.attr("src", "imgs/zivalice na gugalnici.png");
-                img.css({
-                    width: '14.3em',
-                    height: '4.19em',
-                    bottom: '0em'
-                });
-                return false;
-            }
-            else if (targetid.indexOf("#vec_zensk") != -1 || targetid.indexOf("#seznam_organizacij") != -1) { // projekti.html
+            if (targetid.indexOf("#vec_zensk") != -1 || targetid.indexOf("#seznam_organizacij") != -1) { // projekti.html
                 img.attr("src", "imgs/muca in pticki.png");
                 img.css({
                     width: '17.48em',
@@ -129,15 +148,21 @@ $(document).ready(function() {
                     bottom: '-0.1em',
                     right: '8.4%'
                 });
-                $("div.sredina div#paketi_zgoraj").show();
-                $("div.sredina div#paketi_opomba").show();
+                $("div#paketi_zgoraj").show();
+                $("div#paketi_opomba").show();
+                // prikazi sidepane
+                $("div.sidepane aside").css('visibility', 'visible');
+                // scroll-aj samo pakete - zgornja in spodnja opomba naj bosta pri miru
+                $(".content-scrollable").css('height', '59%');
+//                $(".content-scrollable").css('width', '87%');
                 return false;
             }
         }
     });
 
-    // kontakt.html
-    // <form id=contactform>
+    //////////////////
+    // kontakt.html //
+    //////////////////
     var request;
     $("#contactform").submit(function(event) {
         $("span.formoutput").text("");
@@ -169,7 +194,13 @@ $(document).ready(function() {
             if (response == "\r\n") {
                 // Uspesno poslano
                 $("span.formoutput").addClass("success");
-                $("span.formoutput").text("Hvala za sporočilo. Odgovorili vam bomo takoj, ko bomo lahko.");
+                if ($("#kontakt_email input").val() == "") {
+                    $("span.formoutput").text("Hvala za sporočilo.");
+                }
+                else {
+                    $("span.formoutput").text("Hvala za sporočilo.  Odgovorili vam bomo takoj, ko bomo lahko.");
+                }
+
 
                 $("#kontakt_sporocilo textarea").val("");
                 $("#kontakt_email input").val("");
@@ -197,4 +228,43 @@ $(document).ready(function() {
             $inputs.prop("disabled", false);
         });
     });
+
+    ////////////////
+    // domov.html //
+    ////////////////
+    $("div.slideable").hide();
+
+    $("span.slidedown").click(function(e) {
+        var data_target_index = $(this).attr("data-target-index");
+        $("#slideable_" + data_target_index).slideToggle();
+        $(this).slideToggle();
+        $("#slideup_" + data_target_index).addClass("slidelink");
+        return false;
+    });
+
+    $("span.slideup").click(function(e) {
+        var data_target_index = $(this).attr("data-target-index");
+        $("#slideable_" + data_target_index).slideToggle();
+        $("#slidedown_" + data_target_index).slideToggle();
+        $(this).removeClass("slidelink");
+        return false;
+    });
 });
+
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
