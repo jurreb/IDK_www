@@ -1,6 +1,6 @@
 <?php
     $errors = '';
-    $myemail = 'jure.bergant@gmail.com';//<-----Put Your email address here.
+    $myemail = 'idk@idk.si';//<-----Put Your email address here.
     if(empty($_POST['kontakt_sporocilo']))
     {
         //$errors .= "\n Error: all fields are required";
@@ -20,10 +20,20 @@
     {
         $to = $myemail;
         $email_subject = "Sporočilo s spletne strani IDK";
-        $email_body =    "E-naslov: $from_email\n".
-                         "Sporocilo: \n $sporocilo";
-        $headers =       "From: $myemail\n";
+        if (!empty($from_email))
+        {
+            $email_body = "E-naslov: $from_email\n".
+                          "Sporočilo: \n $sporocilo";
+        }
+        else {
+            $email_body = "Sporočilo: \n $sporocilo";
+        }
+        $headers = "Content-Type: text/plain; charset = \"UTF-8\";\n";
+        $headers .= "Content-Transfer-Encoding: 8bit\n";
+        $headers .= "\n";
+        $headers .=      "From: $myemail\n";
         $headers .=      "Reply-To: $from_email";
+
         mail($to,$email_subject,$email_body,$headers);
 
         $errors = '';

@@ -10,8 +10,8 @@ $(document).ready(function() {
 
     // declare a few constants:
     var MIN = 8; //small font size in pixels
-    var DEFAULT_FONT = 16;
-    var DEFAULT_LINEHEIGHT = 20;
+    var DEFAULT_FONT = 18;
+    var DEFAULT_LINEHEIGHT = 22;
     var MAX = 36; //larger size in pixels
     var COOKIE_NAME = "Simple-Fontresizer"; //Maybe give this the name of your site.
     var UNITS = "px";
